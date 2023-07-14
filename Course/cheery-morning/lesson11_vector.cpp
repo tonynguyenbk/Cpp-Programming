@@ -1,23 +1,69 @@
+// #include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
+#include <math.h>
+#include <iomanip>
+#include <algorithm>
 
 using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
-
-    pair<int, int> A[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> A[i].first >> A[i].second;
-    }
+    int n; cin >> n;
+    vector<int> v(n);
+    for (int &x : v)
+        cin >> x;
+    sort(v.begin(), v.end());
+    for (int x : v)
+        cout << x << ' ';
     cout << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cout << A[i].first << ' ' << A[i].second << endl;
-    }
+
+    sort(v.begin(), v.end(), greater<int>());
+    for (int x : v)
+        cout << x << ' ';
+    cout << endl;
+
+    // int n;
+    // cin >> n;
+    // int a[n];
+    // for (int i = 0; i < n; i++) {
+    //     cin >> a[i];
+    // }
+
+    // sort(a, a+n);
+    // for (int x : a)
+    //     cout << x << ' ';
+    // cout << endl;
+    
+    // sort(a, a+n, greater<int>());
+    // for (int x : a)
+    //     cout << x << ' ';
+    // cout << endl;
+
+
+
+    // pair<int, int> a[n];
+
+    // for (int i = 0; i < n; i++) {
+    //     cin >> a[i].first >> a[i].second;
+    // }
+
+    // for (int i = 0; i < n; i++) {
+    //     cout << fixed << setprecision(2) << sqrt(pow(a[i].first,2) + pow(a[i].second, 2)) << endl;
+    // }
+
+
+
+    // pair<int, int> A[n];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> A[i].first >> A[i].second;
+    // }
+    // cout << endl;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << A[i].first << ' ' << A[i].second << endl;
+    // }
 
     // pair<char, int> p{'A', 100};
     // cout << p.first << ' ' << p.second << endl;
