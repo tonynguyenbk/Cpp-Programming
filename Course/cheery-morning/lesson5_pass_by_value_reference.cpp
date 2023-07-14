@@ -11,6 +11,9 @@ void change2(int &n) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
     int x = 200;
     cout << x << endl;
     cout << &x << endl;
