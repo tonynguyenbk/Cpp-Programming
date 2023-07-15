@@ -2,15 +2,18 @@
 
 using namespace std;
 
-void change1(int n) {
+void change1(int n)
+{
     n += 100;
 }
 
-void change2(int &n) {
+void change2(int &n)
+{
     n += 100;
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
